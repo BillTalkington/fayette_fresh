@@ -2,7 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
+@import "vendor/bourbon/bourbon";
+@import "vendor/base/base";
 
 
 // Our variables
@@ -49,5 +50,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "FYPN"
 ;
