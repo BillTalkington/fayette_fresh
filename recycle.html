@@ -1,0 +1,20 @@
+---
+layout: page
+permalink: /recycle/
+custom_css: leaflet
+custom_js: 
+- leaflet
+- SouthUnionTwpRecycleZonesGeoJSON
+---
+
+<h1>Uniontown Area Recycling Pickup Zones</h1>
+
+<div id="mapid"></div>
+
+<style>
+	#mapid { height: 500px; }
+</style>
+
+<script>
+{% include recycle.js %}
+</script>
