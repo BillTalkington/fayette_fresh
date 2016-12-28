@@ -2,7 +2,7 @@
 var farms = new L.LayerGroup();
 
 {% for farm in site.data.fayettefreshfarms %}
-marker = new L.marker([{{ farm.latlon }}])
+	marker = new L.marker([{{ farm.latlon }}])
 			.bindPopup("{{ farm.name }}")
 			.addTo(farms);
 {% endfor %}
