@@ -1,0 +1,18 @@
+---
+layout: page
+permalink: /farms/
+custom_css: leaflet
+custom_js: leaflet
+---
+
+<div id="mapid"></div>
+
+{% include members.html %}
+
+<style>
+	#mapid { height: 500px; }
+</style>
+
+<script>
+{% include farms.js %}
+</script>
