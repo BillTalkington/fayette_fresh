@@ -34,3 +34,5 @@ var overlays = {
 	};
 
 L.control.layers(baseLayers, overlays).addTo(map);
+
+var geojson = L.geoJson(FayetteCountyPA, {fill: false}).addTo(map);
