@@ -38,7 +38,7 @@ var geojson = L.geoJson(SUtwpZones, {
     onEachFeature: onEachFeature
 	}).addTo(map);
 
-var geojson = L.geoJson(FayetteCountyPA, {fill: false}).addTo(map);
+var geojsonCounty = L.geoJson(FayetteCountyPA, {fill: false}).addTo(map);
 
 // var baseLayers = {
 // 		"Streets": streets
