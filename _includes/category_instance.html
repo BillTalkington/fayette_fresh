@@ -1,15 +1,18 @@
 <section id="members" class="members text-centered">
-	<h2>Active Members</h2>
+	<!-- <h2>{{ page.category_title }}</h2> -->
 	<hr class="horz-bar">
-	<p class="member-statement">FYPN's members represent a diverse array of industries, employers, and interests. We are proud to live and work in Fayette County and look forward to you joining us!</p>
+	<!-- <p class="member-statement">FYPN's members represent a diverse array of industries, employers, and interests. We are proud to live and work in Fayette County and look forward to you joining us!</p> -->
+	<p class="member-statement">{{ page.category_statement }}</p>
+
 	<div class="container-members">
 
 	{% for instance in category_file %}
 		<div class="member">
-			<span class="fa-stack fa-4x">
+			<img src="{{ site.baseurl }}/img/{{instance.image}}" alt="">
+			<!-- <span class="fa-stack fa-4x">
 				<i class="fa fa-circle fa-stack-2x"></i>
 	      <i class="fa fa-picture-o fa-stack-1x text-icons"></i>
-			</span>
+			</span> -->
 			<h4><strong>{{ instance.name }}</strong></h4>
 			<p>Stuff</p> 
 			<p>More Stuff</p>
