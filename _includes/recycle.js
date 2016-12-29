@@ -5,7 +5,7 @@ var streets = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?
   accessToken: 'pk.eyJ1IjoiYnRhbGsiLCJhIjoiY2l3NXVmOTR4MDBkcDJ0cDhucDZrbDY1ZyJ9.f8U38BI8VzRPf4LsFjjJcQ'});
 
 var map = L.map('mapid', {
-    center: [39.899926, -79.732910],
+    center: [39.920332, -79.647191],
     zoom: 10,
     layers: [streets]
 });

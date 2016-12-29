@@ -7,12 +7,6 @@ var farms = new L.LayerGroup();
 			.addTo(farms);
 {% endfor %}
 
-var joe = new L.LayerGroup();
-
-L.marker([39.899926, -79.732910])
-			.addTo(joe)
-			.bindPopup("<b>Hello Joe!</b><br>Let's grab a beer sometime.");
-
 var streets = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
   maxZoom: 18,
@@ -20,9 +14,9 @@ var streets = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?
   accessToken: 'pk.eyJ1IjoiYnRhbGsiLCJhIjoiY2l3NXVmOTR4MDBkcDJ0cDhucDZrbDY1ZyJ9.f8U38BI8VzRPf4LsFjjJcQ'});
 
 var map = L.map('mapid', {
-    center: [39.899926, -79.732910],
+    center: [39.920332, -79.647191],
     zoom: 10,
-    layers: [streets, farms, joe]
+    layers: [streets, farms]
 });
 
 var baseLayers = {
