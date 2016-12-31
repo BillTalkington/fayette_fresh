@@ -72,7 +72,7 @@ h4 {
 }
 
 
-.container-activities, .container-members {
+.container-activities, .container-exemplars {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -88,13 +88,13 @@ h4 {
 
 @media (min-width: 769px) {
 
-	.container-members {
+	.container-exemplars {
 		padding: 0 5vw;
 	}	
 }
 
 
-.activity, .member {
+.activity, .exemplar {
 	// background: orange;
 	margin-bottom: 1em;
 }
@@ -103,16 +103,16 @@ h4 {
 	max-width: 200px;
 }
 
-.members {
+.exemplars {
 	background: #f2f2f2;
 	padding: 40px 0;
 }
 
-.member {
+.exemplar {
 	max-width: 180px;
 }
 
-.member-statement, .join-statement, .lead-statement, .event-statement {
+.category-statement {
 	padding: 0 15vw;
 	margin-bottom: 0.5em;
 }
@@ -128,7 +128,7 @@ section.activities > hr {
 	border-top-color: #eee;
 }
 
-section.members, section.upcoming-events > hr {
+section.exemplars {
 	border-top-color: #222;
 }
 

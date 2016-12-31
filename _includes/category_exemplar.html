@@ -1,0 +1,23 @@
+<section id="exemplars" class="exemplars text-centered">
+	<!-- <h2>{{ page.category_title }}</h2> -->
+	<hr class="horz-bar">
+
+	<p class="category-statement">{{ page.category_statement }}</p>
+
+	<div class="container-exemplars">
+
+	{% for exemplar in category_file %}
+		<div class="exemplar">
+			<img src="{{ site.baseurl }}/img/{{exemplar.image}}" alt="">
+			<!-- <span class="fa-stack fa-4x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+	      <i class="fa fa-picture-o fa-stack-1x text-icons"></i>
+			</span> -->
+			<h4><strong>{{ exemplar.name }}</strong></h4>
+			<p>Town Name</p> 
+		</div>	
+
+	{% endfor %}
+
+	</div>
+</section>
