@@ -2,10 +2,13 @@
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
   $large-screen: 53.75em !default;
-  $base-font-color: $dark-gray !default;
+  // $base-font-color: $dark-gray !default;
+  $base-font-color: white;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 8em;
-  $centered-navigation-background: #E7F1EC;
+  // $centered-navigation-background: #E7F1EC;
+  // $centered-navigation-background: #FFCE4B;
+  $centered-navigation-background: #424242;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 60px;
