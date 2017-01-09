@@ -48,17 +48,22 @@
 }
 
 /* Text */
-h2 {
+h1 {
 	margin-top: 0.5em;
 	font-size: 1.5em;
 }
 
-h3 {
+h2 {
+	margin-top: 0.5em;
 	font-size: 1.35em;
 }
 
-h4 {
+h3 {
 	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1.1em;
 }
 
 .lead-statement {
@@ -143,9 +148,14 @@ h4 {
 	}
 }
 
+.category-title {
+	margin-top: 2em;
+}
+
 .category-statement, .lead-statement {
 	padding: 0 15vw;
 	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 .horz-bar {

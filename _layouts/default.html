@@ -8,9 +8,19 @@
 		{% include navigation.html %}
 
     <div class="page-content">
+      
       <div class="wrapper">
+      
+        <h1 class="category-title text-centered">Fayette Fresh {{ page.title | capitalize }}</h1>
+      
+        <hr class="horz-bar">
+      
+        <h2 class="category-statement text-centered">{{ page.category_statement }}</h2>
+      
         {{ content }}
+      
       </div>
+    
     </div>
 
     {% include footer.html %}
