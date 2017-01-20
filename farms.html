@@ -14,10 +14,21 @@ exemplar_statement: Check out these local <strong>Fayette County</strong> farms!
 
 <div id="mapid"></div>
 
+<!-- {% include category_checkboxes.html %} -->
+<div class="checkboxValues text-centered">
+    <label for="checkbox-beef">Beef</label>
+    <input type="checkbox" id="checkbox-beef" class="checkbox" value="beef" checked />
+    <label for="checkbox-beef">Vegetables</label>
+    <input type="checkbox" id="checkbox-vegetables" class="checkbox" value="vegetables" checked />
+    <label for="checkbox-beef">Fruit</label>
+    <input type="checkbox" id="checkbox-fruit" class="checkbox" value="fruit" checked />
+</div>
+
 {% assign category_file = site.data.farms %}
 
 {% include category_exemplar.html %}
 
 <script>
 	{% include farms.js %}
+    {% include site.js %}
 </script>

@@ -1,0 +1,22 @@
+Add another director <input type="checkbox" id="checkbox1"/>
+<div id="autoUpdate" class="autoUpdate">
+content
+</div>
+
+
+<script>
+
+$(document).ready(function () {
+    $('#checkbox1').change(function () {
+        if (!this.checked) 
+        //  ^
+           $('.test-class').fadeIn('slow');
+        else 
+            $('.test-class').fadeOut('slow');
+    });
+});
+
+// var button = document.querySelector("button");
+// button.addEventListener("click", showHide, false);
+
+</script>
