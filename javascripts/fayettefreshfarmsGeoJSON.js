@@ -16,7 +16,7 @@ var farms =
         "website": "myfarm.net",
         "latlon": "39.930083, -79.514524",
         "address": "100 Farm Lane, Uniontown, PA 15401",
-        "products": "Beef, Vegetables, Fruit"
+        "products": "Beef, Vegetables"
       }
     },
     {
@@ -33,7 +33,7 @@ var farms =
         "website": "myfarm.net",
         "latlon": "39.894844, -79.901643",
         "address": "101 Farm Lane, Uniontown, PA 15401",
-        "products": "Beef, Vegetables, Fruit"
+        "products": "Beef"
       }
     },
     {
@@ -50,7 +50,7 @@ var farms =
         "website": "myfarm.net",
         "latlon": "39.813622, -79.716958",
         "address": "102 Farm Lane, Uniontown, PA 15401",
-        "products": "Beef, Vegetables, Fruit"
+        "products": "Vegetables, Fruit"
       }
     },
     {
@@ -63,11 +63,11 @@ var farms =
         "timestamp": "11/24/2016 19:34:15",
         "email": "joe@myfarm.net",
         "name": "Pharm",
-        "phone": "724-345-4564",
+        "phone": "724-345-4564asdfasdf",
         "website": "myfarm.net",
         "latlon": "40.068059, -79.731087",
         "address": "103 Farm Lane, Uniontown, PA 15401",
-        "products": "Beef, Vegetables, Fruit"
+        "products": "Fruit"
       }
     }
   ]

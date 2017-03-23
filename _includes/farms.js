@@ -21,7 +21,7 @@ function onEachFeature(feature, layer) {
 
 var geojson = L.geoJson(FayetteCountyPA, {fill: false}).addTo(map);
 
-L.geoJSON(farms, {
+var farmsLayer = L.geoJSON(farms, {
 		pointToLayer: function (feature, latlng) {
 			return L.marker(latlng);
 		},

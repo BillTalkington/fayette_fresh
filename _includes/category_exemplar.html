@@ -1,5 +1,4 @@
 <section id="exemplars" class="exemplars">
-	<!-- <h2>{{ page.category_title }}</h2> -->
 	<hr class="horz-bar">
 
 	<p class="category-statement text-centered">{{ page.category_statement }}</p>
@@ -9,10 +8,6 @@
 		{% for exemplar in category_file %}
 			<div class="exemplar {{ exemplar.products | remove: "," | downcase }}">
 				<img src="{{ site.baseurl }}/img/{{exemplar.image}}" alt="">
-				<!-- <span class="fa-stack fa-4x">
-					<i class="fa fa-circle fa-stack-2x"></i>
-		      <i class="fa fa-picture-o fa-stack-1x text-icons"></i>
-				</span> -->
 				<div class="exemplar_info">
 					<h4><strong>{{ exemplar.name }}</strong></h4>
 					<p>Town Name</p>
