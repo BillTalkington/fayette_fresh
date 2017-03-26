@@ -89,9 +89,16 @@ h4 {
 	border: 1px solid $grey-color;
 	border-radius: 40px 10px 40px 10px;
 	margin: 4px;
-	max-width: 160px;
+	max-width: 180px;
 	overflow: hidden;
 	transition: all 200ms;
+}
+
+@include media-query($on-palm) {
+    .exemplar {
+    	margin: 0px;
+    	max-width: 140px;
+    }
 }
 
 .exemplar:hover {
