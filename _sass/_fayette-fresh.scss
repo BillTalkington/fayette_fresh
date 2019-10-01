@@ -1,22 +1,4 @@
 
-
-/* Header */
-
-// .header {
-// 	display: table;
-// 	height: 100vh;
-// 	width: 100vw;
-// 	// background: url(../img/jumonville.jpg) no-repeat center center scroll;
-// 	-webkit-background-size: cover;
-// 	-moz-background-size: cover;
-// 	background-size: cover;
-// 	-o-background-size: cover;
-// }
-
-// .header img {
-// 	width: 50vw;
-// }
-
 /* About Us */
 
 .about-us {
@@ -34,17 +16,6 @@
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-}
-
-/* Activities */
-
-.activities {
-	background: #40abd9;
-  color: white;
-}
-
-.activity {
-	// padding: 0 1em;
 }
 
 /* Text */
@@ -89,19 +60,13 @@ h4 {
 }
 
 
-.container-activities, .container-exemplars {
+.container-exemplars {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: space-around;
-	// padding: 0 5vw;
-}
 
-// @media (min-width: 769px) {
-// 	.container-members {
-// 		padding: 0 20vw;
-// 	}
-// }
+}
 
 @media (min-width: 769px) {
 
@@ -111,13 +76,8 @@ h4 {
 }
 
 
-.activity, .exemplar {
-	// background: orange;
+.exemplar {
 	margin-bottom: 1em;
-}
-
-.activity {
-	max-width: 200px;
 }
 
 .exemplars {
@@ -128,10 +88,17 @@ h4 {
 .exemplar {
 	border: 1px solid $grey-color;
 	border-radius: 40px 10px 40px 10px;
+	height: 210px;
 	margin: 4px;
 	max-width: 180px;
 	overflow: hidden;
 	transition: all 200ms;
+}
+
+@include media-query($on-palm) {
+    .exemplar {
+    	max-width: 140px;
+    }
 }
 
 .exemplar:hover {
@@ -165,9 +132,6 @@ h4 {
   margin: 0 auto 1em;
 }
 
-section.activities > hr {
-	border-top-color: #eee;
-}
 
 section.exemplars {
 	border-top-color: #222;

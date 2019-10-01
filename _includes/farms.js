@@ -1,7 +1,21 @@
+function setInitialMapZoom() {
+
+   var viewportWidth = window.innerWidth;
+   var mapZoom;
+
+   if (viewportWidth < 600) {
+      mapZoom = 9; 
+	 } else {
+      mapZoom = 10; 
+	 }
+
+return mapZoom;
+}
+
 
 var map = L.map('mapid', {
     center: [39.920332, -79.647191],
-    zoom: 10
+    zoom: setInitialMapZoom()
 });
 
 var streets = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {

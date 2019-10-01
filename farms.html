@@ -8,6 +8,7 @@ custom_js:
 - leaflet
 - FayetteCountyPAGeoJSON
 - fayettefreshfarmsGeoJSON
+- modal
 category_title: Fayette Fresh Farms
 exemplar_statement: Check out these local <strong>Fayette County</strong> farms!
 ---
@@ -28,7 +29,7 @@ exemplar_statement: Check out these local <strong>Fayette County</strong> farms!
 
 {% assign category_file = site.data.farms %}
 
-{% include category_exemplar.html %}
+{% include category_exemplar_modal.html %}
 
 <script>
 	{% include farms.js %}

@@ -1,0 +1,37 @@
+<section id="exemplars" class="exemplars">
+	<hr class="horz-bar">
+
+	<p class="category-statement text-centered">{{ page.category_statement }}</p>
+
+	<div class="container-exemplars">
+
+		{% for exemplar in category_file %}
+
+			<div class="modal">
+				<label for="modal-{{exemplar.name | replace: ' ', '-' }}">
+					<div class="exemplar {{ exemplar.products | remove: "," | downcase }}  modal-trigger">
+						<img src="{{ site.baseurl }}/img/{{exemplar.image}}" alt="">
+						<div class="exemplar_info">
+							<h4><strong>{{ exemplar.name }}</strong></h4>
+							<p>Town Name</p>
+						</div> 
+					</div>
+				</label>
+
+				<input class="modal-state" id="modal-{{exemplar.name | replace: ' ', '-' }}" type="checkbox" />
+			  <div class="modal-fade-screen">
+			    <div class="modal-inner">
+			      <div class="modal-close" for="modal-{{exemplar.name | replace: ' ', '-' }}"></div>
+			      <h1>{{ exemplar.name }}</h1>
+						<h2><a href="http://{{ exemplar.website }}">Website</a></h2>
+			      <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+			      <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+			    </div>
+	  		</div>	
+			</div>
+		{% endfor %}
+
+	</div>
+</section>
+
+
