@@ -1,0 +1,25 @@
+var farms =
+{
+  "type": "FeatureCollection",
+  "features": [
+    {% for farm in site.data.farms -%}
+    {
+      "type": "Feature",
+      "properties": {
+        "timestamp": "{{ farm.timestamp }}",
+        "email": "{{ farm.email }}",
+        "name": "{{ farm.name }}",
+        "phone": "{{ farm.phone }}",
+        "website": "{{ farm.website }}",
+        "address": "{{ farm.address }}",
+        "products": "{{ farm.products }}"
+      },
+      "geometry": {
+        "type": "Point",
+        {% assign latLon = farm.latlon | split: ", " | reverse | join: ", " -%}
+        "coordinates": [{{ latLon }}]
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor -%}
+  ]
+}
