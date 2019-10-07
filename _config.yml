@@ -19,6 +19,7 @@ twitter_username: FayetteFresh
 
 # Build settings
 markdown: kramdown
+encoding: utf-8
 
 # Google services
 google_analytics: UA-65201101-2

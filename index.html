@@ -1,3 +1,29 @@
 ---
 layout: front
+custom_css: 
+- leaflet
+custom_js:
+- leaflet
+- geojson/FayetteCountyPAGeoJSON
+- geojson/ff_main_data
+- modal
 ---
+
+{% include about-us.html %}
+
+<div class="page-content">
+  
+  <div class="wrapper">
+  
+    <hr class="horz-bar">
+  
+	{% include map.html data_file=site.data.ff_main_data %}
+  
+  </div>
+
+</div>
+
+<script>
+	{% include map.js %}
+	{% include site.js %}
+</script>

@@ -1,0 +1,25 @@
+var data =
+{
+  "type": "FeatureCollection",
+  "features": [
+    {% for place in site.data.ff_main_data -%}
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "{{ place.name }}",
+        "phone": "{{ place.phone }}",
+        "website": "{{ place.website }}",
+        "facebook": "{{ place.facebook }}",
+        "instagram": "{{ place.instagram }}",
+        "address": "{{ place.address }}",
+        "products": "{{ place.products }}"
+      },
+      "geometry": {
+        "type": "Point",
+        {% assign latLon = place.latlon | split: ", " | reverse | join: ", " -%}
+        "coordinates": [{{ latLon }}]
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor -%}
+  ]
+}
