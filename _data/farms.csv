@@ -1,6 +1,24 @@
 timestamp,email,name,phone,website,latlon,address,products,image
-11/24/2016 19:34:12,joe@myfarm.net,Yum Yum Acres,724-345-4567,google.com,"39.930083, -79.514524","100 Farm Lane, Uniontown, PA 15401","Beef, Vegetables",beet.jpg
-11/24/2016 19:34:13,joe@myfarm.net,Crunchy Farm,724-345-4566,google.com,"39.894844, -79.901643","101 Farm Lane, Uniontown, PA 15401","Beef",chicken.jpg
-11/24/2016 19:34:14,joe@myfarm.net,Old Oak Acres,724-345-4565,google.com,"39.813622, -79.716958","102 Farm Lane, Uniontown, PA 15401","Vegetables, Fruit",tomatoes.jpg
-11/24/2016 19:34:15,joe@myfarm.net,Pharm,724-345-4564,google.com,"40.068059, -79.731087","103 Farm Lane, Uniontown, PA 15401","Fruit",goat.jpg
-10/02/2019 21:20:20,aldi@aldi.com,ALDI Farm,724-345-1234,google.com,"39.883052, -79.734063","123 Aldi Drive, Uniontown, PA 15401","Fruit, Vegetables",goat.jpg
+11/24/16 19:34,joe@myfarm.net,Yum Yum Acres,724-345-4567,google.com,"39.930083, -79.514524","100 Farm Lane, Uniontown, PA 15401","Beef, Vegetables",beet.jpg
+11/24/16 19:34,joe@myfarm.net,Crunchy Farm,724-345-4566,google.com,"39.894844, -79.901643","101 Farm Lane, Uniontown, PA 15401",Beef,chicken.jpg
+11/24/16 19:34,joe@myfarm.net,Old Oak Acres,724-345-4565,google.com,"39.813622, -79.716958","102 Farm Lane, Uniontown, PA 15401","Vegetables, Fruit",tomatoes.jpg
+11/24/16 19:34,joe@myfarm.net,Pharm,724-345-4564,google.com,"40.068059, -79.731087","103 Farm Lane, Uniontown, PA 15401",Fruit,goat.jpg
+10/2/19 21:20,aldi@aldi.com,ALDI Farm,724-345-1234,google.com,"39.883052, -79.734063","123 Aldi Drive, Uniontown, PA 15401","Fruit, Vegetables",goat.jpg
+11/24/16 19:34,joe@myfarm.net,Yum Yum Acres,724-345-4567,google.com,"40.0574427259671, -79.7650603637975","104 Farm Lane, Uniontown, PA 15401","Beef, Vegetables",beet.jpg
+11/24/16 19:34,joe@myfarm.net,Crunchy Farm,724-345-4566,google.com,"39.8779617778422, -79.8120522420976","105 Farm Lane, Uniontown, PA 15401",Beef,chicken.jpg
+11/24/16 19:34,joe@myfarm.net,Old Oak Acres,724-345-4565,google.com,"39.7456257534231, -79.580015126741","106 Farm Lane, Uniontown, PA 15401","Vegetables, Fruit",tomatoes.jpg
+11/24/16 19:34,joe@myfarm.net,Pharm,724-345-4564,google.com,"39.7099865141451, -79.6055905390531","107 Farm Lane, Uniontown, PA 15401",Fruit,goat.jpg
+11/24/16 19:34,joe@myfarm.net,Yum Yum Acres,724-345-4567,google.com,"39.8808915545123, -79.5750155034347","124 Aldi Drive, Uniontown, PA 15401","Fruit, Vegetables",goat.jpg
+11/24/16 19:34,joe@myfarm.net,Crunchy Farm,724-345-4566,google.com,"39.9086535881857, -79.7531569764064","108 Farm Lane, Uniontown, PA 15401","Beef, Vegetables",beet.jpg
+11/24/16 19:34,joe@myfarm.net,Old Oak Acres,724-345-4565,google.com,"39.9759556509862, -79.7677800218028","109 Farm Lane, Uniontown, PA 15401",Beef,chicken.jpg
+11/24/16 19:34,joe@myfarm.net,Pharm,724-345-4564,google.com,"39.761679055151, -79.5794548125332","110 Farm Lane, Uniontown, PA 15401","Vegetables, Fruit",tomatoes.jpg
+10/2/19 21:20,aldi@aldi.com,ALDI Farm,724-345-1234,google.com,"40.1345343030046, -79.6842338764757","111 Farm Lane, Uniontown, PA 15401",Fruit,goat.jpg
+11/24/16 19:34,joe@myfarm.net,Yum Yum Acres,724-345-4567,google.com,"40.1245530359063, -79.5196895443097","125 Aldi Drive, Uniontown, PA 15401","Fruit, Vegetables",goat.jpg
+11/24/16 19:34,joe@myfarm.net,Crunchy Farm,724-345-4566,google.com,"40.0672257666801, -79.5505550711135","112 Farm Lane, Uniontown, PA 15401","Beef, Vegetables",beet.jpg
+11/24/16 19:34,joe@myfarm.net,Old Oak Acres,724-345-4565,google.com,"40.1026889039903, -79.8578590824655","113 Farm Lane, Uniontown, PA 15401",Beef,chicken.jpg
+11/24/16 19:34,joe@myfarm.net,Pharm,724-345-4564,google.com,"40.0586296489472, -79.8979501722472","114 Farm Lane, Uniontown, PA 15401","Vegetables, Fruit",tomatoes.jpg
+11/24/16 19:34,joe@myfarm.net,Yum Yum Acres,724-345-4567,google.com,"39.8961299005862, -79.5459568258068","115 Farm Lane, Uniontown, PA 15401",Fruit,goat.jpg
+11/24/16 19:34,joe@myfarm.net,Crunchy Farm,724-345-4566,google.com,"39.9596251900735, -79.6169043581231","126 Aldi Drive, Uniontown, PA 15401","Fruit, Vegetables",goat.jpg
+11/24/16 19:34,joe@myfarm.net,Old Oak Acres,724-345-4565,google.com,"39.8152243227083, -79.5727700246241","116 Farm Lane, Uniontown, PA 15401","Beef, Vegetables",beet.jpg
+11/24/16 19:34,joe@myfarm.net,Pharm,724-345-4564,google.com,"40.0380209492887, -79.9428501533411","117 Farm Lane, Uniontown, PA 15401",Beef,chicken.jpg
+10/2/19 21:20,aldi@aldi.com,ALDI Farm,724-345-1234,google.com,"39.7663711380597, -79.6855265033623","118 Farm Lane, Uniontown, PA 15401","Vegetables, Fruit",tomatoes.jpg

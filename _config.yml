@@ -9,13 +9,13 @@
 title: Fayette Fresh
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Fayette Fresh is a Fayette County, PA based blog focused on 
-  local food, culture, commerce, and ideas. 
+  Fayette Fresh is a project that aims to celebrate Fayette County,
+  PA—for locals <em>and</em> visitors—by highlighting the food, art,
+  commerce, and community that you find here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://billtalkington.github.io" # the base hostname & protocol for your site
 facebook_username: FayetteFresh
 twitter_username: FayetteFresh
-#github_username: 
 
 # Build settings
 markdown: kramdown

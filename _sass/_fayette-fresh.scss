@@ -38,7 +38,11 @@ h4 {
 }
 
 .lead-statement {
-	margin-bottom: 1.3em;
+	margin: 1em 1em;
+	padding: 0 15vw;
+	@media screen and (min-width: 768px) {
+	    padding: 0 25vw;
+  	}
 }
 
 .text-centered {
@@ -119,10 +123,9 @@ h4 {
 	margin-top: 2em;
 }
 
-.category-statement, .lead-statement {
+.category-statement {
 	padding: 0 15vw;
-	margin-bottom: 1em;
-	margin-top: 1em;
+	margin: 1em;
 }
 
 .horz-bar {
