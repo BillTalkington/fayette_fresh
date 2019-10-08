@@ -23,10 +23,12 @@
 			    <div class="modal-inner">
 			      <div class="modal-close" for="modal-{{exemplar.name | replace: ' ', '-' }}"></div>
 			      <strong>{{ exemplar.name }}</strong>
-						<ul>
-							<li><a href="{{ exemplar.website }}">Website</a></li>
-							<li><a href="{{ exemplar.facebook }}">Facebook</a></li>
-						</ul>
+						{% if exemplar.website %}
+							<p><a href="{{ exemplar.website }}">Website</a></p>
+						{% endif %}
+						{% if exemplar.facebook %}
+							<p><a href="{{ exemplar.facebook }}">Facebook</a></p>
+						{% endif %}
 			      <p class="modal-intro">{{ exemplar.description }}</p>
 			    </div>
 	  		</div>	
