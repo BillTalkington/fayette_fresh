@@ -25,18 +25,17 @@ var streets = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?
 	.addTo(map);
 
 function onEachFeature(feature, layer) {
-		
-		if (feature.properties && feature.properties.name) {
-			var popupContent = feature.properties.name;
-		}
-		layer.bindPopup(popupContent);
+	if (feature.properties && feature.properties.name) {
+		var popupContent = feature.properties.name;
 	}
+	layer.bindPopup(popupContent);
+}
 
 var geojson = L.geoJson(FayetteCountyPA, {fill: false}).addTo(map);
 
 var dataLayer = L.geoJSON(data, {
-		pointToLayer: function (feature, latlng) {
-			return L.marker(latlng);
-		},
-		onEachFeature: onEachFeature
-	}).addTo(map);
+	pointToLayer: function (feature, latlng) {
+		return L.marker(latlng);
+	},
+	onEachFeature: onEachFeature
+}).addTo(map);
