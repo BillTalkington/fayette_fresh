@@ -6,6 +6,7 @@ var data =
     {
       "type": "Feature",
       "properties": {
+        "itemNumber": "{{ forloop.index }}",
         "name": "{{ place.name }}",
         "phone": "{{ place.phone }}",
         "website": "{{ place.website }}",

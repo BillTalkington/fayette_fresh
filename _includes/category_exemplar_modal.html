@@ -4,7 +4,7 @@
     <div class="container-exemplars" id="item-container">
 
         {% for exemplar in category_file %}
-            <div class="modal">
+            <div class="modal" data-itemnumber="{{ forloop.index }}">
                 <label for="modal-{{exemplar.name | replace: ' ', '-' }}">
                     <div class="exemplar {{ exemplar.products | remove: "," | downcase }}  modal-trigger">
                         <div class="img-container">

@@ -1,5 +1,4 @@
 function setInitialMapZoom() {
-
    var viewportWidth = window.innerWidth;
    var mapZoom;
 

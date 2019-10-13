@@ -2,5 +2,6 @@
 
 {% assign category_file = include.data_file %}
 
-<input style="margin-top: 1em;"type="text" id="myInput" onkeyup="myFunction()" placeholder="What are you looking for?" title="Item search">
+<input style="margin-top: 1em;"type="text" id="liveItemSearch" onkeyup="liveItemUpdate()" placeholder="What are you looking for?" title="Item search">
+
 {% include category_exemplar_modal.html %}
