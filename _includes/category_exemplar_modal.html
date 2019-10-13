@@ -1,49 +1,48 @@
 <section id="exemplars" class="exemplars">
-	<hr class="horz-bar">
-	
-	<div class="container-exemplars">
+    <hr class="horz-bar">
 
-		{% for exemplar in category_file %}
+    <div class="container-exemplars" id="item-container">
 
-			<div class="modal">
-				<label for="modal-{{exemplar.name | replace: ' ', '-' }}">
-					<div class="exemplar {{ exemplar.products | remove: "," | downcase }}  modal-trigger">
-						<div class="img-container">
-							<img src="{{ site.baseurl }}/img/{{exemplar.image}}" alt="">
-						</div>
-						<div class="exemplar_info">
-							<h4><strong>{{ exemplar.name }}</strong></h4>
-							<p>{{ exemplar.town }}</p>
-						</div> 
-					</div>
-				</label>
+        {% for exemplar in category_file %}
+            <div class="modal">
+                <label for="modal-{{exemplar.name | replace: ' ', '-' }}">
+                    <div class="exemplar {{ exemplar.products | remove: "," | downcase }}  modal-trigger">
+                        <div class="img-container">
+                            <img src="{{ site.baseurl }}/img/{{exemplar.image}}" alt="">
+                        </div>
+                        <div class="exemplar_info">
+                            <h4><strong>{{ exemplar.name }}</strong></h4>
+                            <p>{{ exemplar.town }}</p>
+                        </div>
+                    </div>
+                </label>
 
-				<input class="modal-state" id="modal-{{exemplar.name | replace: ' ', '-' }}" type="checkbox" />
-			  <div class="modal-fade-screen">
-			    <div class="modal-inner">
-				<div class="modal-close" for="modal-{{exemplar.name | replace: ' ', '-' }}"></div>
-				<strong>{{ exemplar.name }}</strong>
-				<div>
-					{% if exemplar.website %}
-						<a href="{{ exemplar.website }}">
-							<i class="fa fa-link fa-2x" aria-hidden="true"></i>
-						</a>
-					{% endif %}
-					{% if exemplar.facebook %}
-						<a href="{{ exemplar.facebook }}">
-							<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-						</a>
-					{% endif %}
-					{% if exemplar.instagram %}
-						<a href="{{ exemplar.instagram }}">
-							<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-						</a>
-					{% endif %}
-				</div>
-			      <p class="modal-intro">{{ exemplar.description }}</p>
-			    </div>
-	  		</div>	
-			</div>
-		{% endfor %}
-	</div>
+                <input class="modal-state" id="modal-{{exemplar.name | replace: ' ', '-' }}" type="checkbox" />
+                <div class="modal-fade-screen">
+                    <div class="modal-inner">
+                        <div class="modal-close" for="modal-{{exemplar.name | replace: ' ', '-' }}"></div>
+                        <strong class="item-name">{{ exemplar.name }}</strong>
+                        <div>
+                            {% if exemplar.website %}
+                                <a href="{{ exemplar.website }}">
+                                    <i class="fa fa-link fa-2x" aria-hidden="true"></i>
+                                </a>
+                            {% endif %}
+                            {% if exemplar.facebook %}
+                                <a href="{{ exemplar.facebook }}">
+                                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                                </a>
+                            {% endif %}
+                            {% if exemplar.instagram %}
+                                <a href="{{ exemplar.instagram }}">
+                                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                                </a>
+                            {% endif %}
+                        </div>
+                        <p class="modal-intro">{{ exemplar.description }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 </section>
