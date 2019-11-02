@@ -1,0 +1,30 @@
+<section id="item-tiles" class="item-tiles">
+    <hr class="horz-bar">
+
+    <div class="item-tiles-container" id="item-tiles-container">
+    {% for item in item_file %}
+        <div class="item" data-itemnumber="{{ forloop.index }}">
+            <h4 class="item-name"><strong>{{ item.name }}</strong></h4>
+            <div class="item-tile-info">
+                <p>{{ item.town }}</p>
+                {% if item.website %}
+                    <a href="{{ item.website }}">
+                        <i class="fa fa-link fa-2x" aria-hidden="true"></i>
+                    </a>
+                {% endif %}
+                {% if item.facebook %}
+                    <a href="{{ item.facebook }}">
+                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                    </a>
+                {% endif %}
+                {% if item.instagram %}
+                    <a href="{{ item.instagram }}">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
+                {% endif %}                
+            </div>
+
+        </div>
+    {% endfor %}
+    </div>
+</section>

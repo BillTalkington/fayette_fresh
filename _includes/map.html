@@ -1,7 +1,7 @@
 <div id="mapid"></div>
 
-{% assign category_file = include.data_file %}
+{% assign item_file = include.data_file %}
 
 <input style="margin-top: 1em;"type="text" id="liveItemSearch" onkeyup="liveItemUpdate()" placeholder="What are you looking for?" title="Item search">
 
-{% include category_exemplar_modal.html %}
+{% include item_tiles_container.html %}
