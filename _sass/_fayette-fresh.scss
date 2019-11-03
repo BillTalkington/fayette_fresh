@@ -34,7 +34,7 @@ h3 {
 }
 
 h4 {
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 .lead-statement {
@@ -63,6 +63,12 @@ h4 {
 	color: #eec10b;
 }
 
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .item-tiles-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -81,30 +87,36 @@ h4 {
 	padding: 40px 0;
 }
 
-.item-name {
-	background: #f2f2f2;
-	border-bottom: 1px solid;
-	padding: 0px 10px 10px;
-}
-
 .item-tile-info {
 	padding: 0 10px 10px;
 }
 
+.item-image {
+	height: 150px;
+}
+
+.item-name-box {
+	background: #f4f4f4;
+	height: 60px;
+}
+
+.item-town {
+	margin: 5px 0px;
+}
+
 .item {
 	border: 1px solid $grey-color;
-	border-radius: 10px;
-	height: 150px;
+	border-radius: 5px;
+	height: 290px;
 	margin: 4px;
-	padding: 10px 0px 10px;
-	width: 180px;
+	width: 150px;
 	overflow: hidden;
 	transition: all 200ms;
 }
 
 @include media-query($on-palm) {
-    .item {
-		max-width: 140px;
+	.item {
+		margin: 4px 0px;
     }
 }
 

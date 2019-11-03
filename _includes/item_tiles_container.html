@@ -4,9 +4,12 @@
     <div class="item-tiles-container" id="item-tiles-container">
     {% for item in item_file %}
         <div class="item" data-itemnumber="{{ forloop.index }}">
-            <h4 class="item-name"><strong>{{ item.name }}</strong></h4>
-            <div class="item-tile-info">
-                <p>{{ item.town }}</p>
+            <div class="item-image"></div>
+            <div class="item-name-box flex-center">
+                <div class="item-name text-centered"><strong>{{ item.name }}</strong></div>
+            </div>
+            <div class="item-tile-info text-centered">
+                <p class="item-town">{{ item.town }}</p>
                 {% if item.website %}
                     <a href="{{ item.website }}">
                         <i class="fa fa-link fa-2x" aria-hidden="true"></i>
@@ -23,7 +26,6 @@
                     </a>
                 {% endif %}                
             </div>
-
         </div>
     {% endfor %}
     </div>
