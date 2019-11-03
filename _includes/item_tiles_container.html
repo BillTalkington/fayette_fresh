@@ -3,7 +3,7 @@
 
     <div class="item-tiles-container" id="item-tiles-container">
     {% for item in item_file %}
-        <div class="item" data-itemnumber="{{ forloop.index }}">
+        <div class="item" data-itemnumber="{{ forloop.index }}" data-itemkeywords="{{ item.keywords }}">
             <div class="item-image"></div>
             <div class="item-name-box flex-center">
                 <div class="item-name text-centered"><strong>{{ item.name }}</strong></div>

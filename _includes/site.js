@@ -28,8 +28,8 @@ function liveItemUpdate() {
 	items = itemTilesContainer.getElementsByClassName("item");
     for (i = 0; i < items.length; i++) {
 		itemName = items[i].getElementsByClassName("item-name")[0];
-		itemIntro = items[i].getElementsByClassName("modal-intro")[0];
-		itemText = itemName.textContent;
+		itemKeywords = items[i].dataset.itemkeywords;
+		itemText = itemName.textContent + ' ' + itemKeywords;
 		itemNumber = items[i].dataset.itemnumber;
 
         if (itemText.toLowerCase().indexOf(filter) > -1) {
